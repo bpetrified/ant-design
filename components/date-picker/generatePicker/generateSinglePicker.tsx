@@ -102,7 +102,9 @@ export default function generatePicker<DateType>(generateConfig: GenerateConfig<
             ? getTimeProps({ format, ...this.props, picker: mergedPicker })
             : {}),
         };
-
+        console.log('additionalProps', additionalProps)
+        console.log('restProps', restProps)
+        console.log('additionalOverrideProps', additionalOverrideProps);
         return (
           <SizeContext.Consumer>
             {size => {
